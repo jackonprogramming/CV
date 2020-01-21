@@ -1,0 +1,5 @@
+body {
+    background: url('source/leaves.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
