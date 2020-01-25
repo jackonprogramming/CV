@@ -2,6 +2,8 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    min-width: auto;
+    max-width: auto;
 }
 
 body {
@@ -153,8 +155,10 @@ header .text-Container .text .Profession {
 
 .main .Projects .container-projects .Project {
     background-color: #fff;
-    width: 46%;
+    width: 28%;
     margin-bottom: 40px;
+    box-shadow: 10px 10px 10px grey;
+    overflow: visible;
 }
 
 .main .Projects .container-projects .Project .thumb {
@@ -172,6 +176,10 @@ header .text-Container .text .Profession {
     text-align: center;
 }
 
+.main .Projects .container-projects .Project .description .bold {
+    color: #3895ea;
+}
+
 .main .Projects .container-projects .Project .description .name {
     font-weight: 700;
     color: #3895ea;
@@ -181,4 +189,131 @@ header .text-Container .text .Profession {
 .main .Projects .container-projects .Project .description .category {
     font-size: 14px;
     color: #636363;
+    line-height: 1.8em;
+}
+
+footer .Contact {
+    padding: 60px 0;
+}
+
+footer .Contact .tittle {
+    font-size: 50px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #48a7ccf6;
+    text-align: center;
+}
+
+footer .Contact .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .Contact .form input[type="text"],
+footer .Contact .form input[type="email"],
+footer .Contact .form textarea {
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #a4a4a4;
+}
+
+footer .Contact .form input[type="text"],
+footer .Contact .form input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+}
+
+footer .Contact .form input[type="text"]:focus,
+footer .Contact .form input[type="email"]:focus,
+footer .Contact .form textarea:focus {
+    border: 2px solid #3895ea;
+}
+
+footer .Contact .form textarea {
+    width: 100%;
+    height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+    margin-bottom: 15px;
+}
+
+footer .Contact .form .button {
+    margin: auto;
+    background: #3895ea;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+
+footer .Contact .form .button:hover {
+    background: #387bea;
+}
+
+footer .Social-media {
+    background: #1e2b38;
+    padding: 60px 0;
+}
+
+footer .Social-media .container {
+    display: flex;
+    justify-content: center;
+}
+
+footer .Social-media a {
+    color: #fff;
+    text-align: center;
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 0 20px;
+}
+
+footer .Social-media .facebook:hover {
+    background: #3b5998;
+}
+
+footer .Social-media .pinterest:hover {
+    background: #bd081c;
+}
+
+footer .Social-media .github:hover {
+    background: #333;
+}
+
+footer .Social-media .linkedin:hover {
+    background: #5d7886;
+}
+
+@media screen and (max-width: 800px) {
+    header .menu {
+        text-align: center;
+    }
+    .main .Projects .container .Project {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header .container .text .Name {
+        font-size: 35px;
+        ;
+    }
+    header .container .text .Profession {
+        font-size: 18px;
+        ;
+    }
+}
+
+.holis {
+    margin-top: 195px;
 }
